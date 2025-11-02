@@ -1,11 +1,9 @@
 package edu.icet.model.entity;
 
-import jakarta.persistence.CascadeType;
-import jakarta.persistence.Entity;
-import jakarta.persistence.ManyToMany;
-import jakarta.persistence.ManyToOne;
+import jakarta.persistence.*;
 import lombok.*;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 
 @Getter
@@ -16,9 +14,11 @@ import java.util.Date;
 @Entity
 public class PlaceOrderEntity {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long Orerid;
     private double totalprice;
-    private Date OrderDate;
+    private LocalDateTime OrderDate;
 
     @ManyToMany(cascade = CascadeType.ALL)
     private FoodItemEntity foodItemEntity;
