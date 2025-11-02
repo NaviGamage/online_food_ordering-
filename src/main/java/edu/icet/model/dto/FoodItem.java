@@ -13,5 +13,5 @@ public class FoodItem {
     private String name;
     private String description;
     private double price;
-    private boolean available;
+
 }
