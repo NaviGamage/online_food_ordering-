@@ -9,9 +9,9 @@ import lombok.*;
 @NoArgsConstructor
 @ToString
 
-public class CustomerDto {
+public class Customer {
 
-        private String userid;
+        private String customerid;
         private String name;
         private String email;
         private String phone;
