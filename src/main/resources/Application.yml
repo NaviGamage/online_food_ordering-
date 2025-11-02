@@ -1,0 +1,8 @@
+spring:
+  datasource:
+    
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show_sql: true
